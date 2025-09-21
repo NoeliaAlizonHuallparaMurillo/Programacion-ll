@@ -97,6 +97,48 @@ class JuegoAdivinaPar extends JuegoAdivinaNumero {
         }
         return true;
     }
+
+    public void juega() {
+        reiniciaPartida();
+
+        Random random = new Random();
+       numeroAAdivinar = 2 * random.nextInt(6); // 0,2,4,6,8,10
+
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Adivina un número entre 0 y 10: ");
+            int intento = sc.nextInt();
+
+            if (!validaNumero(intento)) {
+                System.out.println("Número inválido, intente de nuevo.");
+                continue;
+            }
+
+            if (intento == numeroAAdivinar) {
+                System.out.println("Acertaste el numero!");
+                actualizaRecord();
+                break;
+            } else {
+                if (quitaVida()) {
+                    if (intento < numeroAAdivinar) {
+                        System.out.println("El número a adivinar es mayor.");
+                    } else {
+                        System.out.println("El número a adivinar es menor.");
+                    }
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
 }
 
 // Juego de números impares
@@ -114,12 +156,49 @@ class JuegoAdivinaImpar extends JuegoAdivinaNumero {
         }
         return true;
     }
+
+public void juega() {
+        reiniciaPartida();
+
+        Random random = new Random();
+        numeroAAdivinar = 1 + 2 * random.nextInt(5); // 1,3,5,7,9
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Adivina un número entre 0 y 10: ");
+            int intento = sc.nextInt();
+
+            if (!validaNumero(intento)) {
+                System.out.println("Número inválido, intente de nuevo.");
+                continue;
+            }
+
+            if (intento == numeroAAdivinar) {
+                System.out.println("Acertaste el numero!");
+                actualizaRecord();
+                break;
+            } else {
+                if (quitaVida()) {
+                    if (intento < numeroAAdivinar) {
+                        System.out.println("El número a adivinar es mayor.");
+                    } else {
+                        System.out.println("El número a adivinar es menor.");
+                    }
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+
+
+
 }
 
 // Clase principal
 public class Ejercicio2 {
     public static void main(String[] args) {
-        System.out.println("----------- Juego Adivina Número -----------");
+        System.out.println("=== Juego Adivina Número ===");
         JuegoAdivinaNumero j1 = new JuegoAdivinaNumero(3);
         j1.juega();
 
