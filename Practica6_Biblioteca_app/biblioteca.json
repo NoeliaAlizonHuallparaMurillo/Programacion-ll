@@ -1,0 +1,96 @@
+{
+    "autores": [
+        {
+            "nombre": "noelia",
+            "nacionalidad": "boliviana"
+        },
+        {
+            "nombre": "Miguel Cervantes",
+            "nacionalidad": "Española"
+        },
+        {
+            "nombre": "Dante alighieri",
+            "nacionalidad": "Italiano"
+        },
+        {
+            "nombre": "Jane austen",
+            "nacionalidad": "Britanica"
+        }
+    ],
+    "libros": [
+        {
+            "titulo": "noches xd",
+            "isbn": "1234",
+            "paginas": [
+                "14",
+                "12"
+            ],
+            "disponible": false
+        },
+        {
+            "titulo": "Don quijote de la mancha",
+            "isbn": "123456789",
+            "paginas": [
+                "1",
+                "350"
+            ],
+            "disponible": true
+        },
+        {
+            "titulo": "Orgullo y prejuicio",
+            "isbn": "9876543221",
+            "paginas": [
+                "1",
+                "300"
+            ],
+            "disponible": true
+        },
+        {
+            "titulo": "Divina Comedia",
+            "isbn": "543221",
+            "paginas": [
+                "1",
+                "600"
+            ],
+            "disponible": false
+        }
+    ],
+    "estudiantes": [
+        {
+            "codigo": "1234",
+            "nombre": "maide"
+        },
+        {
+            "codigo": "123",
+            "nombre": "darlin"
+        },
+        {
+            "codigo": "98706524",
+            "nombre": "Darleen espinoza"
+        },
+        {
+            "codigo": "1764318",
+            "nombre": "Noelia Huallpara"
+        }
+    ],
+    "prestamos": [
+        {
+            "estudiante_codigo": "1234",
+            "libro_isbn": "1234",
+            "fecha_prestamo": "2025-11-26",
+            "fecha_devolucion": "2025-12-01"
+        },
+        {
+            "estudiante_codigo": "1234",
+            "libro_isbn": "543221",
+            "fecha_prestamo": "2025-12-01",
+            "fecha_devolucion": null
+        },
+        {
+            "estudiante_codigo": "123",
+            "libro_isbn": "1234",
+            "fecha_prestamo": "2025-12-01",
+            "fecha_devolucion": null
+        }
+    ]
+}
