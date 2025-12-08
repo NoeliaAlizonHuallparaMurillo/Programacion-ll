@@ -1,0 +1,66 @@
+[
+  {
+    "nombre": "Carlos",
+    "apellido": "Gómez",
+    "especialidad": "Cardiología",
+    "anios_experiencia": 10,
+    "consultas": [
+      {
+        "id": 1,
+        "nombre_paciente": "María",
+        "apellido_paciente": "García",
+        "dia": 15,
+        "mes": "diciembre",
+        "ano": 2024
+      },
+      {
+        "id": 2,
+        "nombre_paciente": "Pedro",
+        "apellido_paciente": "Sánchez",
+        "dia": 28,
+        "mes": "diciembre",
+        "ano": 2024
+      },
+      {
+        "id": 3,
+        "nombre_paciente": "Lucía",
+        "apellido_paciente": "Fernández",
+        "dia": 10,
+        "mes": "enero",
+        "ano": 2024
+      }
+    ]
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "Martínez",
+    "especialidad": "Dermatología",
+    "anios_experiencia": 12,
+    "consultas": [
+      {
+        "id": 7,
+        "nombre_paciente": "Elena",
+        "apellido_paciente": "Ruiz",
+        "dia": 24,
+        "mes": "diciembre",
+        "ano": 2024
+      },
+      {
+        "id": 8,
+        "nombre_paciente": "Miguel",
+        "apellido_paciente": "Vargas",
+        "dia": 15,
+        "mes": "noviembre",
+        "ano": 2024
+      },
+      {
+        "id": 9,
+        "nombre_paciente": "Carmen",
+        "apellido_paciente": "Ortega",
+        "dia": 28,
+        "mes": "diciembre",
+        "ano": 2024
+      }
+    ]
+  }
+]
